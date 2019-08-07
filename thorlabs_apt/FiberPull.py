@@ -236,7 +236,7 @@ moveBack_start = end_pos-(2*moveIncrement)
 moveBack_end = start_pos-moveIncrement
 
 leftMotor_pos = end_pos-moveIncrement
-for y in np.arange(moveBack_start, moveBack_end, -moveIncrement):
+for y in np.arange(moveBack_start, moveBack_end, -moveIncrement): 
     leftMotor_pos = leftMotor_pos+moveIncrement
     #print("Left motor position: ", leftMotor_pos) #optional print statement to see if where you think the motor is moving is actually where it's moving
     motorLeft.move_to(leftMotor_pos)
@@ -268,7 +268,7 @@ for y in np.arange(moveBack_start, moveBack_end, -moveIncrement):
     #print("Right motor position: ", rightMotor_pos)  #optional print statement to see if where you think the motor is moving is actually where it's moving
     time.sleep(.01)
 
-print("blah")
+
 print("Now move back again")
 
 rightMotor_pos = rightMotor_pos+moveIncrement
